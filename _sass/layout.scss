@@ -1,12 +1,25 @@
-.container, .text-container {
-	margin: 0 auto;
-	position: relative;
-	padding: 0 20px;
-}
+// .column {
+// 	float: left;
+// 	width: 50%;
+// 	padding: 5px;
+// }
 
-.text-container {
-	max-width: 750px;
-}
+// /* Clear floats after image containers */
+// .row::after {
+// 	content: "";
+// 	clear: both;
+// 	display: table;
+// }
+
+// .container, .text-container {
+// 	margin: 0 auto;
+// 	position: relative;
+// 	padding: 0 20px;
+// }
+
+// .text-container {
+// 	max-width: 750px;
+// }
 
 .container {
 	max-width: 1140px;
@@ -21,7 +34,7 @@ header {
 	color: #fff;
 	padding: 20px 0;
 	background: $brand-color; /* Old browsers */
-	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
+	background: $brand-color; //linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
 
 	a {
 		color: #fff;
@@ -69,7 +82,7 @@ header {
 }
 
 section {
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 section + section {
