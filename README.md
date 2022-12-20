@@ -1,17 +1,9 @@
-# Hydra
+# Grandma's Recipes
 
-Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
-Increase the web presence of your brand with this configurable theme.
+Website for all things Grandma's Recipes
 
-![Hydra template screenshot](images/_screenshot.png)
 
-Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
-
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/hydra-jekyll-template)
-
-## Features
+<!-- ## Features
 
 * Contact form
 * Pre-built pages
@@ -77,4 +69,4 @@ Hydra is already optimised for adding, updating and removing pages, staff, advic
 ### Footer
 
 * Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+* Set in the *Data* / *Footer* section. -->
