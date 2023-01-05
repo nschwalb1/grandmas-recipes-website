@@ -8,11 +8,12 @@ description: Recipe app to save, share, and make family recipes.
 		<h2 class="editable">Bringing your family together, <u>one recipe at a time.</u></h2>
 		<!-- <p class="subtext editable">Track and optimize your sales team in real time.</p> -->
 		<div class="row" style="align-items:top;align-content:center;display:flex;justify-content:center;">
-			<a href="{{ site.baseurl }}/">
+            <!-- <input type="submit" value="I'm interested" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#F4A896; font-size: 24px;"> -->
+			<a href="{{ site.baseurl }}#bottom-signup">
 				<img src="{{ site.baseurl }}/images/google-play-badge.png" alt="Google Play" class="google editable" style="width:auto;height:75px;"/>
 			</a>
-			<a href="{{ site.baseurl }}/">
-				<img src="{{ site.baseurl }}/images/ios-app-store-badge.svg" alt="App Store" class="apple editable" style="width:auto;height:51px;margin-top:13px;"/>
+			<a href="{{ site.baseurl }}#bottom-signup">
+				<img src="{{ site.baseurl }}/images/ios-app-store-badge.svg" alt="App Store" class="apple editable" style="width:auto;height:51px;margin-top:12px;"/>
 			</a>
 		</div>
 	</div>
@@ -55,7 +56,7 @@ description: Recipe app to save, share, and make family recipes.
 		</div>
 	</section>
 
-<!-- 	<section class="testimonial">
+	<!-- <section class="testimonial">
 		<div class="container flex">
 			<div class="testimonial-block">
 				<div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable"></div>
@@ -65,10 +66,89 @@ description: Recipe app to save, share, and make family recipes.
 				</blockquote>
 			</div>
 		</div>
-	</section>
-
-	<section class="bottom-cta">
-		<h2 class="editable"><strong>Improve</strong> your sales process today</h2>
-		<div class="button alt"><a href="#">Get Started Free</a></div>
 	</section> -->
+
+	<section class="bottom-cta" id="bottom-signup">
+		<h2 class="editable" style="margin-bottom: 0px;"><strong>Sign up to stay in the loop</h2>
+		<p class="editable" style="color: #fff; padding-left: 20px; padding-right: 20px; margin-bottom: 0px;">We're currently in a closed beta before going live in app stores, but we'd love for you to join us as a tester.</p>
+		<p class="editable" style="color: #fff; padding-left: 20px; padding-right: 20px; margin-top: 0px;">If you're interested in joining the beta and getting early access to the app (or not and just want to learn more) please sign up below!</p>
+		<!-- Begin Mailchimp Signup Form -->
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif;  width:400px;}
+			/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		</style>
+		<center>
+		<div id="mc_embed_signup">
+		    <form action="https://app.us21.list-manage.com/subscribe/post?u=4160a2c5c35a26d7d93118608&amp;id=9d86e5f5e7&amp;f_id=00a8cfe1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		        <div id="mc_embed_signup_scroll">
+		        
+		        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+		<div class="mc-field-group">
+			<label for="mce-FNAME" style="margin-top:0px">First Name </label>
+			<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+			<!-- <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span> -->
+		</div>
+		<div class="mc-field-group">
+			<label for="mce-LNAME" style="margin-top:0px">Last Name </label>
+			<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+			<!-- <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span> -->
+		</div>
+		<div class="mc-field-group input-group" style="margin-top:0px">
+		    <strong>Beta Interest </strong>
+		    <ul><li>
+		    <input type="radio" value="Yes" name="MMERGE7" id="mce-MMERGE7-0" checked>
+		    <label for="mce-MMERGE7-0">Yes</label>
+		</li>
+		<li>
+		    <input type="radio" value="No" name="MMERGE7" id="mce-MMERGE7-1">
+		    <label for="mce-MMERGE7-1">No</label>
+		</li>
+		</ul>
+		    <!-- <span id="mce-MMERGE7-HELPERTEXT" class="helper_text"></span> -->
+		</div>
+		<div class="mc-field-group input-group" style="margin-top:0px">
+		    <strong>Phone OS </strong>
+		    <ul><li>
+		    <input type="radio" value="Android" name="MMERGE6" id="mce-MMERGE6-0">
+		    <label for="mce-MMERGE6-0">Android</label>
+		</li>
+		<li>
+		    <input type="radio" value="iOS" name="MMERGE6" id="mce-MMERGE6-1">
+		    <label for="mce-MMERGE6-1">iOS</label>
+		</li>
+		</ul>
+		    <!-- <span id="mce-MMERGE6-HELPERTEXT" class="helper_text"></span> -->
+		</div>
+		<div class="mc-field-group size1of2">
+			<label for="mce-PHONE" style="margin-top:0px">Phone Number </label>
+			<input type="text" name="PHONE" class="" value="" id="mce-PHONE">
+			<!-- <span id="mce-PHONE-HELPERTEXT" class="helper_text"></span> -->
+		</div>
+		<div class="mc-field-group">
+			<label for="mce-EMAIL" style="margin-top:0px">Email Address  <span class="asterisk">*</span>
+		</label>
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+			<!-- <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span> -->
+		</div>
+		<div hidden="true"><input type="hidden" name="tags" value="224804"></div>
+			<div id="mce-responses" class="clear foot">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none; color:#fff"></div>
+			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4160a2c5c35a26d7d93118608_9d86e5f5e7" tabindex="-1" value=""></div>
+		        <div class="optionalParent">
+		            <div class="clear foot">
+		                <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#F4A896;">
+		                <!-- <p class="brandingLogo"><a href="http://eepurl.com/ihynIf" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p> -->
+		            </div>
+		        </div>
+		    </div>
+		</form>
+		</div>
+	</center>
+		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+		<!--End mc_embed_signup-->
+	</section>
 </div>
