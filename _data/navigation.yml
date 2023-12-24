@@ -1,3 +1,7 @@
+- name: Home
+  link: /
+  new_window: false
+  highlight: false
 - name: Privacy Policy
   link: /privacy/
   new_window: false

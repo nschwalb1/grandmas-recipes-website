@@ -56,3 +56,25 @@ p, address {
 	font-weight: 300;
 	line-height: 1.4em;
 }
+
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 5%;
+}
+
+.center {
+  width: 45%;
+}
+
+.right {
+  width: 50%;
+}
