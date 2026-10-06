@@ -1,72 +1,23 @@
-# Grandma's Recipes
+# Grandma's Recipes website
 
-Website for all things Grandma's Recipes
+Static marketing site for the Grandma's Recipes app (https://grandmasrecipes.app). No dependencies, no framework.
 
+```bash
+npm run build   # writes dist/
+npm test        # builds, then checks titles, descriptions, JSON-LD, links, alt text, robots/llms
+```
 
-<!-- ## Features
+- `src/site.mjs`: site facts, FAQ, features, blog posts, per-page title/description. Edit here.
+- `build.mjs`: renders every page, `sitemap.xml`, `robots.txt` (AI crawlers allowed) and `llms.txt` from that data.
+- `public/`: images, icons. Copied as-is.
+- `src/privacy.json`: privacy policy text, carried over word for word from the previous site.
 
-* Contact form
-* Pre-built pages
-* Pre-styled components
-* Blog with pagination
-* Post category pages
-* Disqus comments for posts
-* Staff and author system
-* Configurable footer
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+## Deploy
 
-## Setup
+Any static host: build command `npm run build`, output directory `dist`. `vercel.json` sets clean URLs (no `.html`) and cache headers. URLs match the old Hostinger site exactly, so nothing needs a redirect.
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+Analytics are off. To turn on GA4, build with `GA_ID=G-XXXXXXX` (add a consent banner first if you need one).
 
-## Develop
+## SEO / AEO
 
-Hydra was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
-
-Install the dependencies with [Bundler](http://bundler.io/):
-
-~~~bash
-$ bundle install
-~~~
-
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
-
-### Posts
-
-* Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
-
-### Contact Form
-
-* Preconfigured to work with CloudCannon, but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
-
-### Staff
-
-* Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Navigation* section.
-
-### Footer
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section. -->
+Per page: unique title and description, canonical, Open Graph, one H1, BreadcrumbList. Home also has Organization, WebSite, MobileApplication and FAQPage JSON-LD (the FAQ is visible on the page and mirrored in the markup). Posts have BlogPosting JSON-LD. No ratings or reviews are marked up.
