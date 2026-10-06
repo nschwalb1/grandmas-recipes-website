@@ -1,0 +1,7 @@
+{
+  "name": "grandmas-recipes-website",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs", "test": "node --test" },
+  "engines": { "node": ">=18" }
+}
